@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="container">
+        <section class="addTaskBar">
+            <div class="taskAdd">
+                <input type="text" name="task" id="task" placeholder="Add Task..." minlength="3" value="">
+                <button class="addBtn" id="addBtn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+        <section class="taskbar" id="btn-group">
+            <button class="box box-1 active">Study</button>
+            <button class="box box-2">Sports</button>
+            <button class="box box-3">Work</button>
+            <button class="box box-4">Other</button>
+        </section>
+        <hr>
+        <section id="box-detail-group">
+        <section class="box-detail box-detail-1">
+            <h2 class="box-h2 h2-1">Study</h2>
+            <ul id="nul-1">
+            </ul>
+        </section>
+        <section class="box-detail">
+            <h2 class="box-h2 h2-2">Sports</h2>
+            <ul id="nul-2">
+            </ul>
+        </section>
+        <section class="box-detail">
+            <h2 class="box-h2 h2-3">works</h2>
+            <ul id="nul-3">
+            </ul>
+        </section>
+        <section class="box-detail">
+            <h2 class="box-h2 h2-4">others</h2>
+            <ul id="nul-4">
+            </ul>
+        </section>
+    </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

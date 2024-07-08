@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-color: #82b3f0;
+    --white: #fff;
+    --box-color: #ccc7c7;
+    --addBtn-color: #1195BF;
+    --addBtn-Dark-color: #117b9b;
+    --box-1-color: #0D98B7;
+    --box-2-color: #2A08F6;
+    --box-3-color: #0ac920;
+    --box-4-color: #CC300E;
+    --box-1-dark-color: #0b758d;
+    --box-2-dark-color: #2106b8;
+    --box-3-dark-color: #0a9b3d;
+    --box-4-dark-color: #a2270b;
+    --checkbox-color: #10BD36;
+
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 20px;
+    display: inherit;
+    justify-content: inherit;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.addTaskBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskAdd {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#task {
+    min-height: 39px;
+    background-color: var(--box-color);
+    padding-left: 20px;
+    font-size: 1.4em;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+#task:focus,
+#task:hover {
+    border: 2px solid var(--addBtn-color);
+}
+
+.addBtn {
+    font-size: 26px;
+    cursor: pointer;
+    background-color: var(--addBtn-color);
+    color: var(--white);
+    padding: 4px 20px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+}
+
+.addBtn:hover {
+    background-color: var(--addBtn-Dark-color);
+}
+
+.taskbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.box {
+    color: var(--white);
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.box-1 {
+    background-color: var(--box-1-color);
+}
+
+.box-2 {
+    background-color: var(--box-2-color);
+}
+
+.box-3 {
+    background-color: var(--box-3-color);
+}
+
+.box-4 {
+    background-color: var(--box-4-color);
+}
+
+.box-1:hover {
+    background-color: var(--box-1-dark-color);
+}
+
+.box-2:hover {
+    background-color: var(--box-2-dark-color);
+}
+
+.box-3:hover {
+    background-color: var(--box-3-dark-color);
+}
+
+.box-4:hover {
+    background-color: var(--box-4-dark-color);
+}
+
+
+hr {
+    align-self: center;
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid var(--addBtn-color);
+    margin: 15px 0;
+}
+
+.box-detail {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px 0;
+    align-self: center;
+    transition: all 0.3s ease-in;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box-detail-1{
+    display: flex;
+}
+
+.active{
+    opacity: 0.6;
+}
+
+.box-detail .box-h2 {
+    padding: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: min-content;
+    align-self: flex-start;
+}
+
+.h2-1 {
+    color: var(--box-1-color);
+    border-bottom: 2px solid var(--box-1-dark-color);
+}
+
+.h2-2 {
+    color: var(--box-2-color);
+    border-bottom: 2px solid var(--box-2-dark-color);
+}
+
+.h2-3 {
+    color: var(--box-3-color);
+    border-bottom: 2px solid var(--box-3-dark-color);
+}
+
+.h2-4 {
+    color: var(--box-4-color);
+    border-bottom: 2px solid var(--box-4-dark-color);
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+ul {
+    align-self: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+ul .list {
+    width: 100%;
+    min-height: 40px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: var(--box-color);
+    border-radius: 12px;
+    list-style: none;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 3px solid var(--box-2-color);
+    cursor: pointer;
+}
+
+ul .list .listId {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.deleteTask {
+    font-size: 22px;
+    margin: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    #task {
+        font-size: 1.2em;
+        padding-left: 10px;
+    }
+
+    .addBtn {
+        padding: 5px 10px;
+    }
+
+    .taskbar {
+        gap: 20px;
+        padding: 10px;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+
+}
