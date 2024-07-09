@@ -2,7 +2,6 @@ const btnGroup = document.getElementById("btn-group");
 const btn = btnGroup.getElementsByClassName("box");
 const boxDetailGroup = document.getElementById("box-detail-group");
 const boxDetail = boxDetailGroup.getElementsByClassName("box-detail");
-let turn0 = true;
 let x = 0;
 
 
@@ -90,6 +89,7 @@ function study() {
         icon0.setAttribute("class", "fa-solid");
         checkbox.append(icon0);
 
+        let turn0 = false;
         list.addEventListener("click", () => {
             if (turn0 === true) {
                 turn0 = false;
@@ -105,6 +105,7 @@ function study() {
 
         const li1 = document.createElement("li");
         li1.setAttribute("class", "listId");
+        li1.setAttribute("id", "listId-1");
         boxListItems.append(li1);
         li1.innerHTML = input.value;
         input.value = "";
@@ -119,6 +120,7 @@ function study() {
         deleteTask.addEventListener("click", () => {
             list.style.display = "none";
         })
+       
     }
 }
 
@@ -141,6 +143,7 @@ function sports() {
         icon0.setAttribute("class", "fa-solid");
         checkbox.append(icon0);
 
+        let turn0 = false;
         list.addEventListener("click", () => {
             if (turn0 === true) {
                 turn0 = false;
@@ -192,6 +195,7 @@ function work() {
         icon0.setAttribute("class", "fa-solid");
         checkbox.append(icon0);
 
+        let turn0 = false;
         list.addEventListener("click", () => {
             if (turn0 === true) {
                 turn0 = false;
@@ -243,6 +247,7 @@ function other() {
         icon0.setAttribute("class", "fa-solid");
         checkbox.append(icon0);
 
+        let turn0 = false;
         list.addEventListener("click", () => {
             if (turn0 === true) {
                 turn0 = false;
@@ -274,10 +279,3 @@ function other() {
         })
     }
 }
-
-
-
-
-
-
-
