@@ -243,12 +243,16 @@ ul .list .listId {
 
 @media screen and (max-width: 450px) {
     #task {
-        font-size: 1.2em;
+        font-size: 0.9em;
         padding-left: 10px;
     }
 
     .addBtn {
-        padding: 5px 10px;
+        padding: 4px 10px;
+    }
+
+    .box{
+        padding: 8px 16px;
     }
 
     .taskbar {
